@@ -54,16 +54,62 @@ li a:hover {
   text-align: center;
 }
 
-.image1 {
-  size: 1.8em;
-  margin: 5px;
-  box-sizing: border-box;
+
+.column {
   float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
-.image2 {
-  size: 1.8em;
-  margin: 5px;
-  box-sizing: border-box;
-  float: right;
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#button1{
+  background-color: black;
+  color: white;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+#button2{
+  background-color: black;
+  color: white;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#main3 {
+  background-color: rgb(32, 37, 37);
+  color: red;
+  padding: 10%;
+}
+
+#main3 h1 {
+  font-size: 100px;
+  top: 1px;
+  text-align: center;
+}
+#main3 p {
+  font-size: 30px;
+  top: 1px;
+  text-align: center;
+}
+.fa {
+  padding: 80px;
+  font-size: 150px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 150%;
+  color: red
 }
